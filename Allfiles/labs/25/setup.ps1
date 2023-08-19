@@ -80,8 +80,9 @@ else
     }
     else {
         $Region = $locations.Get($rand).Location
+    }
 }
-}
+Write-Host "Selected region= $Region";
 
 # Try to create an Azure Databricks workspace in a region that has capacity
 $stop = 0
