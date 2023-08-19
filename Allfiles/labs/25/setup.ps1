@@ -64,7 +64,7 @@ $locations = Get-AzLocation | Where-Object {
     $_.Location -in $preferred_list
 }
 
-if "francecentral" in $location.Location
+if ("francecentral" in $location.Location)
 {
     $Region = $preferedRegion
 }
